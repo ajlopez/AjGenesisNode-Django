@@ -20,7 +20,7 @@ function generate(model, args, ajgenesis, cb) {
     ajgenesis.fileTransform(path.join(__dirname, '..', 'templates', 'settings.py.tpl'), path.join('build', model.project.name, 'settings.py'), model);
     ajgenesis.fileTransform(path.join(__dirname, '..', 'templates', 'urls.py.tpl'), path.join('build', model.project.name, 'urls.py'), model);
     ajgenesis.fileTransform(path.join(__dirname, '..', 'templates', 'wsgi.py.tpl'), path.join('build', model.project.name, 'wsgi.py'), model);
-    ajgenesis.fileTransform(path.join(__dirname, '..', 'templates', '__init__.py.tpl'), path.join('build', model.project.name, 'wsgi.py'), model);
+    ajgenesis.fileTransform(path.join(__dirname, '..', 'templates', '__init__.py.tpl'), path.join('build', model.project.name, '__init__.py'), model);
 
     ajgenesis.fileTransform(path.join(__dirname, '..', 'templates', 'entities', 'models.py.tpl'), path.join('build', 'entities', 'models.py'), model);
     ajgenesis.fileTransform(path.join(__dirname, '..', 'templates', 'entities', 'admin.py.tpl'), path.join('build', 'entities', 'admin.py'), model);
