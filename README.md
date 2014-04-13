@@ -51,17 +51,25 @@ ajgenesis generate
 
 The web site is generated in a new directory `build`.
 
-Install the dependencies
+Validate the model
 ```
 cd build
-npm install
+python manage.py validate
 ```
 
-The site use MySQL.
+Generate the sqlite database
+```
+python manage.py syncdb
+```
 
-Add `build` directory to `htdocs` folder in your local web server.
+Run the server (TBD: explain django install)
+```
+python manage.py runserver
+```
 
-The site is available in your browser using `http://localhost/<yourname>`.
+The site is available in your browser using `http://localhost:8000`.
+
+The admin site is available in your browser using `http://localhost:8000/admin`.
 
 ## Development
 
