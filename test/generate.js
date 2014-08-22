@@ -11,8 +11,8 @@ exports['generate code'] = function (test) {
     
     process.chdir('test');
     
-    var model = ajgenesis.loadModel('models');
-    
+    var model = ajgenesis.loadModel('models/model.json');
+
     test.ok(model.entities);
     test.ok(Array.isArray(model.entities));
     test.equal(model.entities.length, 2);
