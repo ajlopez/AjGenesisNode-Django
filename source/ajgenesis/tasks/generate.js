@@ -5,10 +5,6 @@ var path = require('path'),
 function generate(model, args, ajgenesis, cb) {
     models.completeModel(model);
     
-    model.entities.forEach(function (entity) {
-        entity.classname = entity.descriptor;
-    });
-    
     var entitiesdir = path.join('build', 'entities');
     var websitedir = path.join('build', model.project.name);
     
